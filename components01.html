@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    
+    <!-- If IE use the latest rendering engine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Set the page to the width of the device and set the zoom level -->
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    
+    <title>Bootstrap Components</title>
+    <link type="text/css" rel="stylesheet" href="dist/styles.css" />
+</head>
+<body>
+    
+<!-- CONTAINERS -->
+
+<!-- Container puts padding around itself while container-fluid fills the whole screen. Bootstap grids require a container. -->
+<div class="container">
+    <!-- PAGE HEADER -->
+
+    <!-- page-header adds space around text and enlarges it. It also adds an underline at the end. -->
+    <div class="page-header">
+        <h1>Bootstrap Components - Part 1: Containers, Page Header, Jumbotron, Buttons</h1>
+    </div>
+    
+    <!-- JUMBOTRON -->
+
+    <!-- jumbotron enlarges fonts and puts everything in a gray box with rounded corners. If jumbotron is outside a container it fills the total width. -->
+    <div class="jumbotron">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+        <!-- BUTTONS -->
+
+        <!-- There are many built in button colors and sizes. 
+            If a link is to trigger in page functionality it should use role="button". 
+            The button element should be used in most situations. -->
+        <p>
+            <a href="#" class = "btn btn-default btn-lg" role="button">More info</a>
+            <button type="submit" class = "btn btn-danger" role = "button">Button</button>
+            <input type="button" value="Info" class = "btn btn-info">
+            <button type="submit" class = "btn-primary btn-sm">Primary</button>
+            <button type="submit" class = "btn btn-success btn-xs">Success</button>
+            <button type="submit" class = "btn btn-warning btn-lg">Warning</button>
+            <button type="submit" class = "btn btn-link btn-lg">Link</button>
+        </p>
+
+        <p>
+            <!-- You can disable buttons with disabled -->
+            <button type="button" class="btn btn-lg btn-primary" disabled="disabled">Primary</button>
+
+            <!-- You can disable links in a similar way -->
+            <a href="#" class="btn btn-default btn-lg disabled" role="button">Link</a>
+        </p>
+
+        <p>
+            <!-- You can group buttons. You can size the buttons with btn-group-lg, btn-group-sm or btn-group-xs -->
+            <div class="btn-group btn-group-lg" role="group" aria-label="...">
+                <button type="button" class="btn btn-default">Small</button>
+                <button type="button" class="btn btn-default">Medium</button>
+                <button type="button" class="btn btn-default">Large</button>
+            </div>
+        </p>
+
+    </div>
+    
+</div>
+
+<script src="dist/jquery.min.js"></script>
+<script src="dist/bootstrap.min.js"></script>
+<script src="dist/scripts.js"></script>
+</body>
+</html>

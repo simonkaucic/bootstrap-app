@@ -1,0 +1,71 @@
+// Bootstrap with LESS
+@import "../../node_modules/bootstrap-less/bootstrap/bootstrap.less";
+@import "variables.less";
+
+/* Responsive media queries */
+@desktop: ~"screen and (min-width: 1200px)";
+@hybrid	: ~"screen and (min-width: 992px)";
+@tablet	: ~"screen and (min-width: 768px)";
+@phone	: ~"screen and (max-width: 767px)";
+@pocket	: ~"screen and (max-width: 480px)";
+
+/* Adds borders for tabs */
+@tab-border-color: #DDD;
+.tab-content {
+    border-left: 1px solid @tab-border-color;
+    border-right: 1px solid @tab-border-color;
+    border-bottom: 1px solid @tab-border-color;
+    padding: 10px;
+}
+.nav-tabs {
+    margin-bottom: 0;
+}
+
+/* Add some margins for the Housing logo */
+.housing {
+    float: left;
+    margin: 12px 10px 0 10px;
+}
+
+/* Set max-width for images on media list */
+.media-image {
+    max-width: 150px;
+}
+
+/* Carousel Styling */
+.single-slide() {
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.slide1 {
+    .single-slide();
+    background-image: url('/dist/img/background01.jpg');
+}
+.slide2 {
+    .single-slide();
+    background-image: url('/dist/img/background02.jpg');
+}
+.slide3 {
+    .single-slide();
+    background-image: url('/dist/img/background03.jpg');
+}
+.carousel-caption {
+    h1 {
+        font-size: 5.4em;
+        font-family: 'Pacifico', cursive;
+        padding-bottom: .4em;
+        
+        @media @pocket {
+            font-size: 2em;
+        }
+    }
+    p {
+        font-size: 2em;
+        
+        @media @pocket {
+            font-size: 1.5em;
+        }
+    }
+}

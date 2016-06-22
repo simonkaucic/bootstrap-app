@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    
+    <!-- If IE use the latest rendering engine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Set the page to the width of the device and set the zoom level -->
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    
+    <title>Bootstrap Components</title>
+    <link type="text/css" rel="stylesheet" href="dist/styles.css" />
+</head>
+<body>
+
+<div class="container">
+    <div class="page-header">
+        <h1>Bootstrap Components - Part 3: Icons, Well, Rounded Images, Contextual Colors</h1>
+    </div>
+
+    <!-- ICONS -->
+
+    <!-- Bootstrap has hundreds of free icons @ http://getbootstrap.com/components/#glyphicons 
+        They can be used on their own or inside of buttons with a link or regular button for example. -->
+    <p>
+        <span class="glyphicon glyphicon-film"></span>
+        <i class="glyphicon glyphicon-volume-down"></i>
+
+        <a href="#" class="btn btn-primary btn-lg">Trash <span class="glyphicon glyphicon-camera"></span></a>
+
+        <button type="button" class="btn btn-default btn-lg">
+            <!-- aria-hidden hides decorative icons from screen readers -->
+            <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> Call Me
+        </button>
+    </p>
+
+</div>
+
+<div class="container">
+    <!-- WELL -->
+
+    <!-- well surrounds the text with a rounded border and gray background. The size can be changed with well-sm or well-lg. -->
+    <div class="well well-md">
+        <p>Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+    </div>
+ 
+    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+ 
+<div class="container">
+    <!-- ROUNDED IMAGES -->
+
+    <!-- Images marked as responsive have a max-width equal to the screen. You can add rounded corners with img-rounded, img-circle and img-thumbnail. 
+        pull-left and pull-right will float images in the provided direction. center-block will place the image in the center. -->
+    <img src="dist/img/housing.gif" class="img-responsive img-thumbnail pull-left" alt="Responsive image">
+    <p>Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+    
+    <div class="clearfix"><br /></div>
+    
+    <img src="dist/img/bootstrap.jpg" class="img-responsive img-thumbnail img-circle center-block" alt="Responsive image">
+    
+    <div class="clearfix"><br /></div>
+ 
+    <!-- CONTEXTUAL COLORS -->
+
+    <!-- Contextual colors can be added to text -->
+    <p>
+        <span class="text-muted">Quis nostrud</span>
+        <span class="text-primary">exercitation ullamco</span>
+        <span class="text-success">laboris nisi</span>
+        <span class="text-info">ut aliquip</span>
+        <span class="text-warning">ex ea commodo</span>
+        <span class="text-danger">consequat.</span> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </p>
+
+    <!-- You can set contextual backgrounds -->
+    <p class="bg-primary">Duis aute irure dolor</p>
+    <p class="bg-success">In reprehenderit</p>
+    <p class="bg-info">In voluptate velit</p>
+    <p class="bg-warning">Esse cillum dolore eu</p>
+    <p class="bg-danger">Fugiat nulla pariatur</p>
+</div>
+
+<script src="dist/jquery.min.js"></script>
+<script src="dist/bootstrap.min.js"></script>
+<script src="dist/scripts.js"></script>
+</body>
+</html>
